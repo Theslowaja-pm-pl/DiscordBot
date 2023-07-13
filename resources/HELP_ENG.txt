@@ -1,0 +1,31 @@
+How to set up the bot:
+
+Visit https://github.com/DiscordBot-PMMP/DiscordBot/wiki
+
+
+MAKE SURE YOU DO EVERY STEP FROM ABOVE, OTHERWISE THE BOT WILL NOT WORK.
+
+
+===========================================================================================
+
+
+Config.yml Explained:
+
+version: x                        DO NOT EVER TOUCH THIS.
+
+discord:
+  token: "ABCD123"                DO NOT EVER SHOW THIS TOKEN TO ANYBODY !!! Paste your discord bots token into here.
+                                  for help on how to set up the bot and get the token, see the beginning of this file.
+  use_plugin_cacert: true|false   Use the bundled cacert.pem file for SSL verification, or false to use system default (if any).
+
+logging:
+  max_files: 28                   How many log files to keep on disk at any one time.
+  directory: "logs"               What directory to keep log files in, relative from plugin_data/DiscordBot/
+
+protocol:
+  packets_per_tick: 50            How many packets can be processed per tick.
+  heartbeat_allowance: 60         How many seconds after last heartbeat received before the plugin/thread is declared dead.
+
+                                  DO NOT modify the protocol fields without being told to explicitly, You have been warned...
+
+===========================================================================================
